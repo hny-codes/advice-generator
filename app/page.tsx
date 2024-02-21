@@ -1,7 +1,11 @@
+import QuoteBox from './components/QuoteBox';
+
 export default function Home() {
   return (
-    <main className=''>
-      <h1>Hello world</h1>
+    <main className='grid grid-cols-1 items-center justify-center h-screen'>
+      <div className='px-4'>
+        <QuoteBox />
+      </div>
     </main>
   );
 }
