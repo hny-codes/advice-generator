@@ -32,12 +32,12 @@ export default function QuoteBox() {
 
   return (
     <div className='bg-[--clr-dark-gray-blue] min-w-full min-h-52 rounded-xl relative'>
-      <div className='text-center flex flex-col items-center gap-6 py-4 px-4'>
-        <h1 className='text-[--clr-green] tracking-[0.2em] uppercase font-bold'>
-          Advice # {quote?.slip.id}
+      <div className='text-center flex flex-col items-center gap-6 pt-10 pb-8 px-4'>
+        <h1 className='text-[--clr-green] tracking-[0.2em] uppercase font-bold text-sm'>
+          Advice <span className='pl-2'># {quote?.slip.id}</span>
         </h1>
-        <h2 className='text-[--clr-cyan] font-bold text-2xl'>
-          &quot;{quote?.slip.advice}&quot;
+        <h2 className={`text-[--clr-cyan] font-bold text-quote`}>
+          “{quote?.slip.advice}”
         </h2>
         <svg
           className='mb-8'
