@@ -16,6 +16,9 @@ const config: Config = {
       fontSize: {
         quote: '1.75rem',
       },
+      boxShadow: {
+        button: '0 5px 30px hsl(150, 100%, 66%)',
+      },
     },
   },
   plugins: [],
