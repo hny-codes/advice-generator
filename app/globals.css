@@ -3,15 +3,11 @@
 @tailwind utilities;
 
 :root {
-    /* COLORS */    
-    --clr-cyan: hsl(193, 38%, 86%);
-    --clr-green: hsl(150, 100%, 66%);
-    
-    --clr-gray-blue: hsl(217, 19%, 38%);
-    --clr-dark-gray-blue: hsl(217, 19%, 24%);
-    --clr-dark-blue: hsl(218, 23%, 16%);
+  /* COLORS */
+  --clr-cyan: hsl(193, 38%, 86%);
+  --clr-green: hsl(150, 100%, 66%);
 
-    /* Typography */
-    --font-quote: 1.75rem;
-
+  --clr-gray-blue: hsl(217, 19%, 38%);
+  --clr-dark-gray-blue: hsl(217, 19%, 24%);
+  --clr-dark-blue: hsl(218, 23%, 16%);
 }
