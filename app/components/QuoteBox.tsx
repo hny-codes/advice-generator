@@ -31,8 +31,8 @@ export default function QuoteBox() {
   };
 
   return (
-    <div className='bg-[--clr-dark-gray-blue] min-w-full min-h-52 rounded-xl relative'>
-      <div className='text-center flex flex-col items-center gap-6 pt-10 pb-8 px-4'>
+    <div className='bg-[--clr-dark-gray-blue] min-w-full max-w-xl min-h-52 rounded-xl relative'>
+      <div className='text-center flex flex-col items-center gap-6 pt-10 pb-8 px-4 sm:px-12'>
         <h1 className='text-[--clr-green] tracking-[0.2em] uppercase font-bold text-sm'>
           Advice <span className='pl-2'># {quote ? quote?.slip.id : '..'}</span>
         </h1>
@@ -40,7 +40,7 @@ export default function QuoteBox() {
           {quote ? `“${quote?.slip.advice}”` : 'Loading..'}
         </h2>
         <svg
-          className='mb-8'
+          className='mb-8 sm:hidden'
           width='295'
           height='16'
           xmlns='http://www.w3.org/2000/svg'
@@ -48,6 +48,20 @@ export default function QuoteBox() {
           <g fill='none' fillRule='evenodd'>
             <path fill='#4F5D74' d='M0 8h122v1H0zM173 8h122v1H173z' />
             <g transform='translate(138)' fill='#CEE3E9'>
+              <rect width='6' height='16' rx='3' />
+              <rect x='14' width='6' height='16' rx='3' />
+            </g>
+          </g>
+        </svg>
+        <svg
+          className='mb-8 mt-4 hidden sm:block'
+          width='444'
+          height='16'
+          xmlns='http://www.w3.org/2000/svg'
+        >
+          <g fill='none' fillRule='evenodd'>
+            <path fill='#4F5D74' d='M0 8h196v1H0zM248 8h196v1H248z' />
+            <g transform='translate(212)' fill='#CEE3E9'>
               <rect width='6' height='16' rx='3' />
               <rect x='14' width='6' height='16' rx='3' />
             </g>

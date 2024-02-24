@@ -10,4 +10,6 @@
   --clr-gray-blue: hsl(217, 19%, 38%);
   --clr-dark-gray-blue: hsl(217, 19%, 24%);
   --clr-dark-blue: hsl(218, 23%, 16%);
+
+  --max-width: 1440px;
 }
