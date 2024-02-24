@@ -9,7 +9,7 @@ export default function RandomBtn({ handleQuote, className = '' }: Props) {
   return (
     <button
       onClick={handleQuote}
-      className={`bg-[--clr-green] p-5 rounded-full ${className} hover:shadow-lg hover:shadow-[--clr-green]`}
+      className={`bg-[--clr-green] p-5 rounded-full ${className} hover:shadow-button`}
     >
       <svg width='24' height='24' xmlns='http://www.w3.org/2000/svg'>
         <path
